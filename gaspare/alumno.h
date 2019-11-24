@@ -1,7 +1,8 @@
 #ifndef ALUMNO_H
 #define ALUMNO_H
 #include <string>
-
+#include <sstream>
+#include "fecha.h"
 #include <QDialog>
 using namespace std;
 namespace Ui {
@@ -26,13 +27,12 @@ private:
     void setDatos(string lineaFichero);
     void modificarDatos();
 
-    string nombres, apellidos;
+    QString nombres, apellidos;
     int dni;
     long long codigoEstudiante;
     char genero;//M o F
-    //fecha nacimiento;
-    string direccionDomicilio;
-    string religion;
+    fecha nacimiento;
+    QString direccionDomicilio, religion;
     int codigoMatricula,deuda;
     //expedienteMedico expediente;
 };

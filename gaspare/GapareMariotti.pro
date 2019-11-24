@@ -17,12 +17,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     alumno.cpp \
+    fecha.cpp \
     main.cpp \
     mainwindow.cpp \
     seccion.cpp
 
 HEADERS += \
     alumno.h \
+    fecha.h \
     mainwindow.h \
     seccion.h
 
